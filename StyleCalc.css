@@ -1,0 +1,76 @@
+﻿*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url('images/AbstractBlue.jpg');
+}
+
+.main {
+    border: 4px solid black;
+}
+
+.calc-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.calc-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+}
+
+.gray-button {
+    background-color: rgba(207 207 207);
+}
+
+.gold-button {
+    background-color: rgb(242 183 46);
+}
+
+.darkbrown-button {
+    background-color: rgb(61 61 57);
+    color: white;
+}
+
+.span {
+    grid-column: span 2;
+}
+
+.calc-grid > button:hover {
+    background-color: rgba(255, 255, 255, .9);
+    color: black;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: rgb(240 240 240);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+    
+.output .pre-operand {
+      color: black;
+      font-size: 1.5rem;
+}
+
+.output .operand {
+    color: black;
+    font-size: 2.5rem;
+}

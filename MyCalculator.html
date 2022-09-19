@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link href="StyleCalc.css" rel="stylesheet">
+    <script src="MyCalc.js" defer></script>
+    <link rel="shortcut icon" href="images/Calculator.ico" />
+    <link rel="apple-touch-icon" href="images/Calculator.png" />
+    <link rel="icon" sizes="192x192" href="images/Calculator.png" />
+</head>
+<body>
+    <div class="calc-grid">
+        <div class="output">
+            <div data-previous-operand class="pre-operand"></div>
+            <div data-current-operand class="operand"></div>
+            <div id="divideByZero" class="pre-operand"></div>
+        </div>
+        <button data-clear class="gray-button">AC</button>
+        <button data-change class="gray-button">+/-</button>
+        <button data-operation class="gray-button">%</button>
+        <button data-operation class="gold-button">/</button>
+
+        <button data-number class="darkbrown-button">7</button>
+        <button data-number class="darkbrown-button">8</button>
+        <button data-number class="darkbrown-button">9</button>
+        <button data-operation class="gold-button">*</button>
+
+        <button data-number class="darkbrown-button">4</button>
+        <button data-number class="darkbrown-button">5</button>
+        <button data-number class="darkbrown-button">6</button>
+        <button data-operation class="gold-button">-</button>
+
+        <button data-number class="darkbrown-button">1</button>
+        <button data-number class="darkbrown-button">2</button>
+        <button data-number class="darkbrown-button">3</button>
+        <button data-operation class="gold-button">+</button>
+
+        <button data-number class="darkbrown-button span">0</button>
+        <button data-number class="darkbrown-button">.</button>
+        <button data-equals class="gold-button">=</button>
+    </div>
+</body>
+</html>
